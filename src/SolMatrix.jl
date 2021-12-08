@@ -1,0 +1,15 @@
+include("./Operation.jl")
+using .Operation
+using QML
+qmlfunction("float_to_frac", Operation.float_to_frac)
+qmlfunction("transH", Operation.transH)
+qmlfunction("mul", Operation.mul)
+qmlfunction("minus", Operation.minus)
+qmlfunction("plus", Operation.plus)
+qmlfunction("rang", Operation.rang)
+qmlfunction("obr", Operation.obr)
+qmlfunction("transfake", Operation.transfake)
+qmlfunction("det", Operation.det)
+qmlfunction("tr", Operation.tr)
+loadqml("dev//SolMatrix//src//QMLinterface.qml")
+exec_async()

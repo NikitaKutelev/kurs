@@ -1,0 +1,16 @@
+name = "SolMatrix"
+uuid = "81c7fec7-a283-41e1-80e2-8da5e808de89"
+authors = ["Nikita"]
+version = "0.1.0"
+
+[deps]
+QML = "2db162a6-7e43-52c3-8d84-290c1c42d82a"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
